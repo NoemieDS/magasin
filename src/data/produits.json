@@ -1,0 +1,19 @@
+[
+  {
+    "id": "prd0001",
+    "nom": "Pantalon UNIQLO",
+    "prix": 39.99
+  },
+
+  {
+    "id": "prd0002",
+    "nom": "Chandail UNIQLO",
+    "prix": 49.99
+  },
+
+  {
+    "id": "prd0003",
+    "nom": "Robe UNIQLO",
+    "prix": 59.99
+  }
+]
