@@ -3,23 +3,15 @@ import Produit from "./Produit";
 import produits from "./data/produits.json";
 
 export default function ListeProduits(props) {
-  /*
-      //map() = fonction qui fait correspondre chaque élément du tableau va passer dans 
-      //la fonction. c'est comme une boucle sans écrire une boucle
-      produits.map(function(prd) {
-       return console.log("Les produits :", prd.nom);
-  });
-*/
+
   return (
     <section className="ListeProduits">
       <h2>Liste des produits</h2>
       <section className="produits"> 
       {
-        //fonction fléchée
-        //produits.map((prd) => prd.nom)
-        //Même résultat mais écrit au long
+        //fonction fléchée produits.map((prd) => prd.nom)
         produits.map(function (prd) {
-        return <Produit key={Produit.id} nom={prd.nom} prix={prd.prix} pid={prd.id}/>;
+        return <Produit panier={props.panier} setPanier={props.setPanier} key={Produit.id} nom={prd.nom} prix={prd.prix} pid={prd.id}/>;
         })
       }
       </section>
