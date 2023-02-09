@@ -1,19 +1,33 @@
-import './ListeProduits.scss';
+import "./ListeProduits.scss";
 import Produit from "./Produit";
 import produits from "./data/produits.json";
 
 export default function ListeProduits(props) {
-
   return (
     <section className="ListeProduits">
       <h2>Liste des produits</h2>
-      <section className="produits"> 
-      {
-        //fonction fléchée produits.map((prd) => prd.nom)
-        produits.map(function (prd) {
-        return <Produit panier={props.panier} setPanier={props.setPanier} key={Produit.id} nom={prd.nom} prix={prd.prix} pid={prd.id}/>;
-        })
-      }
+      <section className="produits">
+        {
+
+          //fonction fléchée produits.map((prd) => prd.nom)
+          /* map() = fonction qui fait correspondre chaque élément du tableau va passer dans 
+            la fonction. c'est comme une boucle sans écrire une boucle
+           produits.map(function(prd) {
+           return console.log("Les produits :", prd.nom);
+        });*/
+          produits.map(function (prd) {
+            return (
+              <Produit
+                panier={props.panier}
+                setPanier={props.setPanier}
+                key={Produit.id}
+                nom={prd.nom}
+                prix={prd.prix}
+                pid={prd.id}
+              />
+            );
+          })
+        }
       </section>
     </section>
   );
@@ -34,17 +48,4 @@ export default function ListeProduits(props) {
                   </section>
             ) 
             */
-  /*
-Exemple 1
-
-console.log("Les propriétés :", props)
-return(
-<section>
-        <h2>Liste des produits</h2>
-     <Produit nom="Chemise bleu en cotton" prix="99.99$"/>
-     <Produit nom="Jeans rouge" prix="150.85$"/>
-     <Produit nom="Bottes en cuir" prix="200.00$"/>
-
-      </section>
-) */
 }

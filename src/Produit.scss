@@ -6,10 +6,21 @@
   padding: 0.5rem;
   margin: 0.8rem;
   box-shadow: 0.3rem 0.3rem 0.5rem rgba(80,80,80,0.7);
-  
+
   img {
     width: 100%;
     height: auto;
+  }
+
+  button {
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    border: 1px solid #555;
+    box-shadow: 2px 2px 1px rgba(80, 80, 80, 0.7);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1rem;
   }
 
 }

@@ -2,7 +2,7 @@ import './Appli.scss';
 import Entete from './Entete';
 import ListeProduits from './ListeProduits';
 import Pied2page from './Pied2page';
-import {useState} from 'react';
+import {useState} from 'react'; //Importer la fonction
 
 function Appli() {
 
@@ -15,7 +15,7 @@ function Appli() {
   return (
     <div className="Appli">
      <Entete panier={panier}/>
-     <ListeProduits panier ={panier} setPanier={setPanier}/>
+     <ListeProduits panier={panier} setPanier={setPanier}/>
      <Pied2page/> 
     </div>
   );

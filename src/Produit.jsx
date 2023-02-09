@@ -11,6 +11,7 @@ export default function Produit(props) {
     //let clonePanier = { ...panier }; //... est un splash et ça clone
     let clonePanier = Object.assign({}, panier);
 
+
     //On doit ajouter le produit au panier
     if (clonePanier[props.pid]) {
       clonePanier[props.pid]++;
