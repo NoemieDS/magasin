@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/magasin-general/static/css/main.86f97449.css",
+    "main.js": "/magasin-general/static/js/main.c58ffaaa.js",
+    "index.html": "/magasin-general/index.html",
+    "main.86f97449.css.map": "/magasin-general/static/css/main.86f97449.css.map",
+    "main.c58ffaaa.js.map": "/magasin-general/static/js/main.c58ffaaa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86f97449.css",
+    "static/js/main.c58ffaaa.js"
+  ]
+}
