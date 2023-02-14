@@ -9,7 +9,7 @@ export default function Produit({panier, setPanier, nom, prix, pid}) {
     //Premièrement il faut obtenir une copie conforme du panier / un clone
     // let clonerPanier = JSON.parse(JSON.stringify(panier));
     //let clonePanier = {... panier }; //... est un spread operator et ça clone
-    let clonePanier = Object.assign({}, panier); //autre façpon de cloner, prend les valeurs de panier et met dans new objet
+    let clonePanier = Object.assign({}, panier); //autre façon de cloner, prend les valeurs de panier et met dans new objet
 
     //On doit ajouter le produit au panier
     if (clonePanier[pid]) {

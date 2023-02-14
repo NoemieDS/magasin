@@ -1,0 +1,8 @@
+.ListeProduits {
+  padding: 1rem;
+}
+.ListeProduits .produits {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=ListeProduits.css.map */
