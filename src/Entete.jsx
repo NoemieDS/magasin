@@ -14,7 +14,7 @@ function Entete({panier}) {
       <nav>
         <span>Produits</span>
         <span>À propos</span>
-        {/* values donne les valeur associées à une étiquette */} 
+        {/* values donnent les valeurs associées à une étiquette */} 
         <span>
           <Badge badgeContent={Object.values(panier).length} color="secondary">
           <ShoppingCartIcon />
