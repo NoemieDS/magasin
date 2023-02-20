@@ -20,7 +20,7 @@ export default function ListeProduits({panier, setPanier}) {
                 <Produit
                 panier={panier}
                 setPanier={setPanier}
-                key={Produit.id}
+                key={prd.id}
                 nom={prd.nom}
                 prix={prd.prix}
                 pid={prd.id}

@@ -1,4 +1,5 @@
 import "./Produit.scss";
+import Badge from '@mui/material/Badge';
 
 export default function Produit({panier, setPanier, nom, prix, pid}) {
  // let panier = props.panier;  avec Produit(props)
@@ -27,7 +28,9 @@ export default function Produit({panier, setPanier, nom, prix, pid}) {
       <img src={"images-produits/" + pid + ".webp"} alt="{.nom}" />
       <span className="nom">{nom}</span>
       <span className="prix">{prix}</span>
+      <Badge color='success' badgeContent={(panier[pid]) ? panier[pid].qte : 0}>
       <button onClick={ajouterPanier}>Ajouter au panier</button>
+      </Badge>
     </article>
   );
 }
