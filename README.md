@@ -5,4 +5,4 @@
 ### Professeur : Camille Semaan 
 ### TIM - Collège de Maisonneuve 
 ##### 2023
-
+- Semaine 5 : ajout du calcule du panier
