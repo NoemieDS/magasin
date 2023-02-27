@@ -3,7 +3,9 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Badge from "@mui/material/Badge";
 
 export default function PanierSommaire({ panier }) {
+
   const infoPanier = calculerSommaire(panier);
+
   return (
     <div className="PanierSommaire">
       <input type="checkbox" id="cc-panier" />
@@ -58,7 +60,7 @@ function calculerSommaire(objPanier) {
   };
 
   //Calculer les valeurs
-info.articlesTotal = tabPanier.reduce((acc, suiv) => acc + suiv.qte, 0);
+info.articlesTotal = tabPanier.reduce((acc, suiv) => acc + suiv.qte, 1);
 info.sousTotal = tabPanier.reduce((acc, suiv) => acc + suiv.qte * suiv.prix, 0);
 info.taxes = info.sousTotal * 0.14975;
 info.total = info.sousTotal + info.taxes;
